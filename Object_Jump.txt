@@ -1,7 +1,8 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-public class FILENAME: MonoBehaviour
+
+public class FILENAME : MonoBehaviour
 {
     Rigidbody rb2;
 
