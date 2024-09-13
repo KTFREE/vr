@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 
-public class FILENAME: MonoBehaviour
+public class FILENAME : MonoBehaviour
 {
     Rigidbody rb2;
     public float speed = 2f;
