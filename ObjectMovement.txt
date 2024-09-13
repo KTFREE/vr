@@ -1,0 +1,30 @@
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+public class FILENAME: MonoBehaviour
+{
+    Rigidbody rb2;
+    public float speed = 0.1f;
+
+    void Start()
+    {
+        rb2 = gameObject.GetComponent<Rigidbody>();
+    }
+
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.Translate(50f * speed * Time.deltaTime, 0, 0);
+        }
+        else if(Input.GetKey(KeyCode.LeftArrow))
+    {
+            transform.Translate(-50f * speed * Time.deltaTime, 0, 0);
+        }
+        else if(Input.GetKeyDown(KeyCode.Space))
+    {
+            rb2.AddForce(Vector3.up * 5, ForceMode.Impulse);
+        }
+    }
+}
