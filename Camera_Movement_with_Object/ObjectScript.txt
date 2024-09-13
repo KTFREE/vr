@@ -1,8 +1,8 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-public class FILENAME: MonoBehaviour
+
+public class FILENAME : MonoBehaviour
 {
     public float speed = 0.1f;
 
